@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   layout 'standard'
+
   before_filter :authenticate, :only => ["new", "edit", "create", "update"]
 
   def rss
