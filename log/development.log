@@ -18743,7 +18743,7 @@ Rendered posts/_post (3.3ms)
 Completed in 17ms (View: 9, DB: 1) | 200 OK [http://deadreckoning/]
 
 
-Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 01:52:01) [GET]
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 01:59:04) [GET]
   [4;36;1mPost Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: posts: SELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
 
 
@@ -18813,7 +18813,7 @@ ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: posts: SEL
     /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
     script/server:3
 
-Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (33.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (33.8ms)
 Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
 Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
   [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
@@ -18821,7 +18821,7 @@ Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/tem
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
-  [4;36;1mSQL (3.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
   [4;35;1mSQL (2.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
  FROM sqlite_master
@@ -18829,8 +18829,8 @@ Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/tem
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
 Migrating to CreatePosts (20090313022600)
-  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
-  [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090313022600')[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090313022600')[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
@@ -18843,8 +18843,312 @@ Migrating to CreatePosts (20090313022600)
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("posts")[0m
 
 
-Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 01:52:18) [GET]
-  [4;35;1mPost Load (1.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 01:59:37) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
 Rendering template within layouts/standard
 Rendering welcome/index
-Completed in 13ms (View: 5, DB: 1) | 200 OK [http://deadreckoning/]
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:02:25) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:02:55) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:21:22) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:55:23) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://deadreckoning/]
+
+
+Processing PostsController#new (for 130.49.220.81 at 2009-03-13 02:55:28) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 0ms (View: 0, DB: 0) | 401 Unauthorized [http://deadreckoning/posts/new]
+
+
+Processing PostsController#new (for 130.49.220.81 at 2009-03-13 02:55:32) [GET]
+Rendering template within layouts/standard
+Rendering posts/new
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://deadreckoning/posts/new]
+
+
+Processing PostsController#create (for 130.49.220.81 at 2009-03-13 02:55:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"d88a7e8ae89fd6e54072273049d26267d12198dc", "post"=>{"title"=>"wefwef", "content"=>"lorum ipsum, motherufcker!"}}
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 0ms (View: 0, DB: 0) | 401 Unauthorized [http://deadreckoning/posts]
+
+
+Processing PostsController#create (for 130.49.220.81 at 2009-03-13 02:55:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"d88a7e8ae89fd6e54072273049d26267d12198dc", "post"=>{"title"=>"wefwef", "content"=>"lorum ipsum, motherufcker!"}}
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "content", "created_at") VALUES('2009-03-13 06:55:44', 'wefwef', 'lorum ipsum, motherufcker!', '2009-03-13 06:55:44')[0m
+Redirected to #<Post:0x7fd210812290>
+Completed in 16ms (DB: 0) | 302 Found [http://deadreckoning/posts]
+
+
+Processing PostsController#show (for 130.49.220.81 at 2009-03-13 02:55:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/standard
+Rendering posts/show
+Rendered posts/_post (31.1ms)
+Completed in 46ms (View: 37, DB: 0) | 200 OK [http://deadreckoning/posts/1]
+
+
+Processing PostsController#new (for 130.49.220.81 at 2009-03-13 02:55:47) [GET]
+Rendering template within layouts/standard
+Rendering posts/new
+Completed in 63ms (View: 55, DB: 0) | 200 OK [http://deadreckoning/posts/new]
+
+
+Processing PostsController#create (for 130.49.220.81 at 2009-03-13 02:55:56) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"d88a7e8ae89fd6e54072273049d26267d12198dc", "post"=>{"title"=>"fweawef", "content"=>"There are several ways to make a footer stick to the bottom of a page using CSS. But until now, they've used long and messy hacks or a lot of extra HTML markup; this method uses only 15 lines of CSS and hardly any HTML markup. Even better, it's completely valid CSS, and it works in all major browsers. Internet Explorer 5 and up, Firefox, Safari, Opera and more.\r\n\r\nView the example CSS Sticky Footer.\r\nHow to use this footer on your website\r\n\r\nAdd the following lines of CSS to your stylesheet. The negative value for the margin in .wrapper is the same number as the height of .footer and .push. The negative margin should always equal to the full height of the footer (including any padding or borders you may add)."}}
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "content", "created_at") VALUES('2009-03-13 06:55:56', 'fweawef', 'There are several ways to make a footer stick to the bottom of a page using CSS. But until now, they''ve used long and messy hacks or a lot of extra HTML markup; this method uses only 15 lines of CSS and hardly any HTML markup. Even better, it''s completely valid CSS, and it works in all major browsers. Internet Explorer 5 and up, Firefox, Safari, Opera and more.
+
+View the example CSS Sticky Footer.
+How to use this footer on your website
+
+Add the following lines of CSS to your stylesheet. The negative value for the margin in .wrapper is the same number as the height of .footer and .push. The negative margin should always equal to the full height of the footer (including any padding or borders you may add).', '2009-03-13 06:55:56')[0m
+Redirected to #<Post:0x7fd2109ba4a8>
+Completed in 14ms (DB: 0) | 302 Found [http://deadreckoning/posts]
+
+
+Processing PostsController#show (for 130.49.220.81 at 2009-03-13 02:55:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/standard
+Rendering posts/show
+Rendered posts/_post (2.0ms)
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://deadreckoning/posts/2]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:56:00) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.2ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:57:54) [GET]
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:58:49) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (47.8ms)
+Completed in 64ms (View: 57, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:58:53) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.3ms)
+Rendered posts/_post (0.8ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:59:10) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.2ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:59:49) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:59:50) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.4ms)
+Rendered posts/_post (0.8ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:00:12) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.3ms)
+Rendered posts/_post (0.7ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:00:25) [GET]
+  [4;36;1mPost Load (1.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.9ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:01:03) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.2ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:01:04) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.3ms)
+Rendered posts/_post (0.8ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:01:20) [GET]
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.2ms)
+Rendered posts/_post (0.8ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:02:03) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.8ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:02:06) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:02:14) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.4ms)
+Rendered posts/_post (0.8ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:03:12) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.2ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:03:33) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:03:44) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.6ms)
+Rendered posts/_post (0.8ms)
+Completed in 61ms (View: 54, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:03:58) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.4ms)
+Rendered posts/_post (0.8ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:05:10) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:06:16) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:07:19) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.5ms)
+Rendered posts/_post (0.8ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:07:43) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.3ms)
+Rendered posts/_post (0.8ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
+
+
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 03:10:28) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/standard
+Rendering welcome/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.7ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://deadreckoning/]
