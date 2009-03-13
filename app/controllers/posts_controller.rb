@@ -2,6 +2,12 @@ class PostsController < ApplicationController
   layout 'standard'
   before_filter :authenticate, :action => ["new", "edit", "create", "update"]
 
+  def rss
+	@posts = Post.find(:all).reverse
+	render :layout => false
+	response.headers["Content-Type"] = "application/xml; charset=utf-8"
+  end
+
   # GET /posts/1
   # GET /posts/1.xml
   def show
