@@ -1,0 +1,5 @@
+<% div_for post do %>
+  <h2><%=link_to h(post.title), post %></h2>
+  <p><%=h post.content %></p>
+  <p><small><%=h post.created_at %></small></p>
+<% end %>
