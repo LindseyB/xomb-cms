@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   layout 'standard'
-  before_filter :authenticate, :action => ["new", "edit", "create", "update"]
+  before_filter :authenticate, :only => ["new", "edit", "create", "update"]
 
   # GET /posts/1
   # GET /posts/1.xml
