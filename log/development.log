@@ -18743,7 +18743,7 @@ Rendered posts/_post (3.3ms)
 Completed in 17ms (View: 9, DB: 1) | 200 OK [http://deadreckoning/]
 
 
-Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 01:59:04) [GET]
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 01:52:01) [GET]
   [4;36;1mPost Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: posts: SELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
 
 
@@ -18813,7 +18813,7 @@ ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: posts: SEL
     /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
     script/server:3
 
-Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (33.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (33.9ms)
 Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
 Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
   [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
@@ -18821,7 +18821,7 @@ Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/tem
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
-  [4;36;1mSQL (5.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
   [4;35;1mSQL (2.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
  FROM sqlite_master
@@ -18829,8 +18829,8 @@ Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/tem
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
 Migrating to CreatePosts (20090313022600)
-  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
-  [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090313022600')[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090313022600')[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
@@ -18843,22 +18843,8 @@ Migrating to CreatePosts (20090313022600)
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("posts")[0m
 
 
-Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 01:59:37) [GET]
-  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 01:52:18) [GET]
+  [4;35;1mPost Load (1.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
 Rendering template within layouts/standard
 Rendering welcome/index
-Completed in 12ms (View: 5, DB: 1) | 200 OK [http://deadreckoning/]
-
-
-Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:02:25) [GET]
-  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
-Rendering template within layouts/standard
-Rendering welcome/index
-Completed in 11ms (View: 4, DB: 0) | 200 OK [http://deadreckoning/]
-
-
-Processing WelcomeController#index (for 130.49.220.81 at 2009-03-13 02:02:55) [GET]
-  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
-Rendering template within layouts/standard
-Rendering welcome/index
-Completed in 11ms (View: 4, DB: 0) | 200 OK [http://deadreckoning/]
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://deadreckoning/]
