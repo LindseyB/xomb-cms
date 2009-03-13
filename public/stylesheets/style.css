@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -293px;
+}
+.push {
+  height: 293px;
+}
+
+/* body should center */
+body {
+
+  height: 100%;
+  text-align: center;
+
+  background-color: #3c3c3c;
+  background-image: url('/images/bgtile.png');
+  background-repeat: repeat-y;
+  margin-right: -24px;
+  width:478px;
+
+}
+
+/* div contains grey padding */
+.page {
+
+  width: 900px;
+
+  margin: 0px auto;
+
+
+  text-align: left;
+
+}
+
+/* div rests inside beige plane */
+.content {
+
+  position: relative;
+  z-order: 1;
+
+  margin-top: -175px;
+
+
+
+  padding-left: 75px;
+  padding-right: 75px;
+
+}
+
+.footer {
+  height: 293px;
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  background: url(/images/footer.png) no-repeat;
+
+}
+
+.nav {
+  position: relative;
+  z-order: 1;
+
+  text-align: center;
+
+  width: 182px;
+
+  color: #D2AF00;
+
+  float:right;
+}
+
+.blob {
+
+  position: relative;
+  z-order: 1;
+
+  margin-left: 54px;
+  margin-bottom: 72px;
+
+  width: 478px;
+  margin-right: -24px;
+
+}
+
+img.header {
+
+  position: relative;
+
+  z-order: -1;
+
+}
+
+img.footer {
+
+  position: relative;
+
+  z-order: -1;
+
+}
+
+ul.navlist {
+  list-style-type: none;
+}
+
+table {
+}
+
+a:link {color: #000000; text-decoration: none}
+a:visited {color: #000000; text-decoration: none}
+a:hover {color: #000000; text-decoration: none}
+a:active {color: #000000; text-decoration: none}

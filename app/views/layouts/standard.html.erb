@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+  <head>
+    <%= stylesheet_link_tag "style" %>
+
+    <title>XOmB</title>
+
+    <style>
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <div class="page">
+
+      <!-- header -->
+
+      <img class="header" src="/images/header.png"/>
+
+      <!-- Content -->
+
+      <div class="content">
+
+        <table>
+          <tr>
+            <td>
+              <div class="blob">
+              <%= yield -%>
+              </div> <!-- end of blob -->
+            </td>
+            <td valign="top">
+
+              <!-- Nav Bar -->
+
+              <div class="nav">
+                <ul class="navlist">
+                  <li><%= link_to "XOmB Wiki", "http://wiki.xomb.org" %></li>
+                  <li><%= link_to "XOmB Code", "http://github.com/xomboverlord/xomb/tree/master" %></li>
+                  <li><%= link_to "XOmB Bare Bones",  "http://github.com/xomboverlord/xomb-bare-bones/tree/master" %></li>
+                  <li><%= link_to "XOmB CMS", "http://github.com/xomboverlord/xomb_cms/tree/master" %></li>
+                </ul>
+              </div>
+
+            </td>
+          </tr>
+        </table>
+
+
+
+      </div> <!-- end of content -->
+
+      <!-- footer -->
+
+
+
+    </div> <!-- end of page -->
+    <div class="push"></div>
+  </div> <!-- end of wrapper -->
+  <div class="footer"></div>
+  </body>
+
+</html>
+

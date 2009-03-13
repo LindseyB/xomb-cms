@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  layout 'standard'
   before_filter :authenticate, :action => ["new", "edit", "create", "update"]
 
   # GET /posts/1
