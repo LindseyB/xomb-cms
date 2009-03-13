@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.root :controller => "welcome"
+  map.rss_feed '/rss', :controller => "posts", :action => "rss"
   map.resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
