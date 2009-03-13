@@ -1,14 +1,5 @@
 class PostsController < ApplicationController
-  # GET /posts
-  # GET /posts.xml
-  def index
-    @posts = Post.find(:all)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @posts }
-    end
-  end
+  before_filter :authenticate, :action => ["new", "edit", "create", "update"]
 
   # GET /posts/1
   # GET /posts/1.xml
@@ -82,4 +73,13 @@ class PostsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  protected
+
+  def authenticate
+    authenticate_or_request_with_http_basic do | username, password |
+      username == "foo" && password == "bar"
+    end
+  end
+
 end
