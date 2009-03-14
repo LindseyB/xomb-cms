@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Enable named_scope, a feature of Rails 2.1, even if you have older Rails (tested on Rails 2.0.2 and 1.2.6).
+- !ruby/struct:SM::Flow::P 
+  body: You can pass <tt>false</tt> for <tt>patch</tt> parameter to skip monkeypatching <b>associations</b>. Use this if you feel that <tt>named_scope</tt> broke has_many, has_many :through or has_and_belongs_to_many associations in your app. By passing <tt>false</tt>, you can still use <tt>named_scope</tt> in your models, but not through associations.
+full_name: WillPaginate::enable_named_scope
+is_singleton: true
+name: enable_named_scope
+params: (patch = true)
+visibility: public

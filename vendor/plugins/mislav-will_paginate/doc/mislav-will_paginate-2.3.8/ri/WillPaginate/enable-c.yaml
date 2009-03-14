@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: shortcut for <tt>enable_actionpack</tt> and <tt>enable_activerecord</tt> combined
+full_name: WillPaginate::enable
+is_singleton: true
+name: enable
+params: ()
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: (*args)
+comment: 
+full_name: WillPaginate::NamedScope::Scope::new
+is_singleton: true
+name: new
+params: (proxy_scope, options) {|*args| ...}
+visibility: public
